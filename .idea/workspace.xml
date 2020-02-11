@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1aa652e-efe2-4ccf-8007-e15480b44262" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/neuedu/test2/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/neuedu/test/MyBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/neuedu/test2/MyBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/neuedu/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/neuedu/test/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +69,7 @@
       <recent name="com.neuedu.test" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asus\IdeaProjects\javapro\src\com\neuedu\test2" />
       <recent name="C:\Users\asus\IdeaProjects\javapro\src\com\neuedu\test" />
     </key>
   </component>
@@ -75,7 +79,7 @@
       <module name="javapro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.neuedu.test.*" />
+          <option name="PATTERN" value="com.neuedu.test2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,6 +122,7 @@
       <workItem from="1581330617336" duration="2740000" />
       <workItem from="1581379426268" duration="66000" />
       <workItem from="1581392421423" duration="1159000" />
+      <workItem from="1581418950704" duration="509000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1580975288251</created>
@@ -154,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581392596723</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="123">
+      <created>1581419077318</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581419077318</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,10 +217,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1580976857574" />
-    <state x="295" y="0" key="CommitChangelistDialog2" timestamp="1581392589603">
+    <state x="295" y="0" key="CommitChangelistDialog2" timestamp="1581419074392">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="295" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1581392589603" />
+    <state x="295" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1581419074392" />
     <state x="463" y="127" key="FileChooserDialogImpl" timestamp="1580976715882">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -241,10 +253,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="186" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1581335506922" />
-    <state x="275" y="105" key="Vcs.Push.Dialog.v2" timestamp="1581392595795">
+    <state x="275" y="105" key="Vcs.Push.Dialog.v2" timestamp="1581419081033">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="105" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1581392595795" />
+    <state x="275" y="105" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1581419081033" />
     <state x="375" y="196" key="com.intellij.ide.util.TipDialog" timestamp="1581379429801">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

@@ -1,5 +1,7 @@
 package com.neuedu.test;
 
+import com.neuedu.test2.MyBook;
+
 public class Test {
     public static void main(String[] args) {
         /*Shape r1 = new Rectangle(10,10,"红色");
@@ -22,8 +24,7 @@ public class Test {
         mainBoard.method();*/
 
 
-        MyBook myBook = new MyBook();
-        myBook.menu();
+
             
 
 
