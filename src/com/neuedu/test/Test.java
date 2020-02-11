@@ -22,7 +22,8 @@ public class Test {
         mainBoard.method();*/
 
 
-
+        MyBook myBook = new MyBook();
+        myBook.menu();
             
 
 
