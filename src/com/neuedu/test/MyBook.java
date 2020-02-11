@@ -33,12 +33,19 @@ public class MyBook {
         return books;
     }
     public void print(ArrayList<MyBook> books){
-        for (MyBook book : books){
-            System.out.println(book.name);
-            System.out.println(book.price);
-            System.out.println(book.press);
-            System.out.println(book.author);
-            System.out.println(book.bookISBN);
+        if (books.size() == 0){
+            System.out.println("数组已空");
+        }else {
+            int i = 0;
+            for (MyBook book : books){
+                System.out.println("第"+i+"本书的信息");
+                System.out.println(book.name);
+                System.out.println(book.price);
+                System.out.println(book.press);
+                System.out.println(book.author);
+                System.out.println(book.bookISBN);
+                i++;
+            }
         }
     }
     public void searchName(ArrayList<MyBook> books,String name){

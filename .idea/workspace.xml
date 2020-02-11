@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e1aa652e-efe2-4ccf-8007-e15480b44262" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/com/neuedu/test/MyBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/neuedu/test/MyBook.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="javapro" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\asus\IdeaProjects\javapro\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XQMVblmn3xY2Z3arWJGqx8Abkg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/neuedu/test" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.neuedu.test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asus\IdeaProjects\javapro\src\com\neuedu\test" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neuedu.test.MyTest" />
+      <module name="javapro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neuedu.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1aa652e-efe2-4ccf-8007-e15480b44262" name="Default Changelist" comment="" />
+      <created>1580973889211</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580973889211</updated>
+      <workItem from="1580973895613" duration="2844000" />
+      <workItem from="1580976788582" duration="419000" />
+      <workItem from="1580989728552" duration="620000" />
+      <workItem from="1581316420633" duration="803000" />
+      <workItem from="1581330617336" duration="2740000" />
+      <workItem from="1581379426268" duration="66000" />
+      <workItem from="1581392421423" duration="73000" />
+    </task>
+    <task id="LOCAL-00001" summary="123">
+      <created>1580975288251</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580975288251</updated>
+    </task>
+    <task id="LOCAL-00002" summary="123">
+      <created>1580976055599</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580976055599</updated>
+    </task>
+    <task id="LOCAL-00003" summary="123">
+      <created>1581330686028</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581330686028</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="123" />
+    <option name="LAST_COMMIT_MESSAGE" value="123" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580976857574">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1580976857574" />
+    <state x="295" y="0" key="CommitChangelistDialog2" timestamp="1581330682835">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="295" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1581330682835" />
+    <state x="463" y="127" key="FileChooserDialogImpl" timestamp="1580976715882">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="127" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1580976715882" />
+    <state x="558" y="264" width="274" height="209" key="Github.ShareDialog" timestamp="1580975161539">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="558" y="264" width="274" height="209" key="Github.ShareDialog/0.0.1366.738@0.0.1366.738" timestamp="1580975161539" />
+    <state x="486" y="75" key="Github.UntrackedFilesDialog" timestamp="1580974521972">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="486" y="75" key="Github.UntrackedFilesDialog/0.0.1366.738@0.0.1366.738" timestamp="1580974521972" />
+    <state width="1323" height="112" key="GridCell.Tab.0.bottom" timestamp="1581317237438">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="112" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1581317237438" />
+    <state width="1323" height="112" key="GridCell.Tab.0.center" timestamp="1581317237438">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="112" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1581317237438" />
+    <state width="1323" height="112" key="GridCell.Tab.0.left" timestamp="1581317237438">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="112" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1581317237438" />
+    <state width="1323" height="112" key="GridCell.Tab.0.right" timestamp="1581317237438">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="112" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1581317237438" />
+    <state x="186" y="0" key="SettingsEditor" timestamp="1581335506922">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1581335506922" />
+    <state x="275" y="105" key="Vcs.Push.Dialog.v2" timestamp="1581330693696">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="105" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1581330693696" />
+    <state x="375" y="196" key="com.intellij.ide.util.TipDialog" timestamp="1581379429801">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="375" y="196" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1581379429801" />
+    <state x="339" y="167" key="run.anything.popup" timestamp="1580976826730">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="167" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1580976826730" />
+  </component>
+</project>
