@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1aa652e-efe2-4ccf-8007-e15480b44262" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/neuedu/langrensha/Pai.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/neuedu/langrensha/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/neuedu/langrensha/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/neuedu/bean/MyAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/neuedu/bean/MyInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/neuedu/bean/MyInterface2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/neuedu/bean/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/neuedu/bean/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/neuedu/bean/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/neuedu/bean/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/neuedu/bean/Test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/neuedu/bean/Test4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javapro/com/neuedu/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javapro/com/neuedu/test/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/neuedu/test2/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/neuedu/test2/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javapro/com/neuedu/test2/MyBook2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javapro/com/neuedu/test2/MyBook2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javapro/com/neuedu/test2/Test2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javapro/com/neuedu/test2/Test2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/neuedu/test2/MyBook2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/neuedu/test2/MyBook2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/neuedu/test2/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/neuedu/test2/Test2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +42,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -76,9 +84,22 @@
       <recent name="C:\Users\asus\IdeaProjects\javapro\src\com\neuedu\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="MyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.neuedu.test.MyTest" />
+  <component name="RunManager" selected="Application.Test4">
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neuedu.bean.Test" />
+      <module name="javapro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neuedu.bean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neuedu.test2.Test2" />
       <module name="javapro" />
       <extension name="coverage">
         <pattern>
@@ -90,12 +111,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.neuedu.langrensha.Test" />
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neuedu.bean.Test2" />
       <module name="javapro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.neuedu.langrensha.*" />
+          <option name="PATTERN" value="com.neuedu.bean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neuedu.bean.Test3" />
+      <module name="javapro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neuedu.bean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neuedu.bean.Test4" />
+      <module name="javapro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neuedu.bean.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,8 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.MyTest" />
+        <item itemvalue="Application.Test4" />
+        <item itemvalue="Application.Test2 (1)" />
+        <item itemvalue="Application.Test3" />
+        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.Test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +189,9 @@
       <workItem from="1581330617336" duration="2740000" />
       <workItem from="1581379426268" duration="66000" />
       <workItem from="1581392421423" duration="1159000" />
-      <workItem from="1581418950704" duration="10542000" />
+      <workItem from="1581418950704" duration="10868000" />
+      <workItem from="1581466807821" duration="2348000" />
+      <workItem from="1581487697646" duration="15822000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1580975288251</created>
@@ -190,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581419478836</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="123">
+      <created>1581430493767</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581430493767</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,14 +300,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1580976857574" />
-    <state x="488" y="62" key="#com.intellij.ide.util.MemberChooser" timestamp="1581429528272">
+    <state x="488" y="62" key="#com.intellij.ide.util.MemberChooser" timestamp="1581513063580">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="62" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1581429528272" />
-    <state x="295" y="0" key="CommitChangelistDialog2" timestamp="1581419467656">
+    <state x="488" y="62" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1581513063580" />
+    <state x="295" y="0" key="CommitChangelistDialog2" timestamp="1581430490049">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="295" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1581419467656" />
+    <state x="295" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1581430490049" />
     <state x="463" y="127" key="FileChooserDialogImpl" timestamp="1580976715882">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -261,34 +320,34 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="486" y="75" key="Github.UntrackedFilesDialog/0.0.1366.738@0.0.1366.738" timestamp="1580974521972" />
-    <state width="1323" height="427" key="GridCell.Tab.0.bottom" timestamp="1581430466767">
+    <state width="1323" height="139" key="GridCell.Tab.0.bottom" timestamp="1581513824518">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="427" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1581430466767" />
-    <state width="1323" height="427" key="GridCell.Tab.0.center" timestamp="1581430466767">
+    <state width="1323" height="139" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1581513824518" />
+    <state width="1323" height="139" key="GridCell.Tab.0.center" timestamp="1581513824518">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="427" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1581430466767" />
-    <state width="1323" height="427" key="GridCell.Tab.0.left" timestamp="1581430466766">
+    <state width="1323" height="139" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1581513824518" />
+    <state width="1323" height="139" key="GridCell.Tab.0.left" timestamp="1581513824518">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="427" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1581430466766" />
-    <state width="1323" height="427" key="GridCell.Tab.0.right" timestamp="1581430466767">
+    <state width="1323" height="139" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1581513824518" />
+    <state width="1323" height="139" key="GridCell.Tab.0.right" timestamp="1581513824518">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="427" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1581430466767" />
+    <state width="1323" height="139" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1581513824518" />
     <state x="186" y="0" key="SettingsEditor" timestamp="1581335506922">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="186" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1581335506922" />
-    <state x="275" y="105" key="Vcs.Push.Dialog.v2" timestamp="1581419473873">
+    <state x="275" y="105" key="Vcs.Push.Dialog.v2" timestamp="1581430496630">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="105" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1581419473873" />
-    <state x="375" y="196" key="com.intellij.ide.util.TipDialog" timestamp="1581379429801">
+    <state x="275" y="105" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1581430496630" />
+    <state x="375" y="196" key="com.intellij.ide.util.TipDialog" timestamp="1581466819281">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="375" y="196" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1581379429801" />
+    <state x="375" y="196" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1581466819281" />
     <state x="339" y="167" key="run.anything.popup" timestamp="1580976826730">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

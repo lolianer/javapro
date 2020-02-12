@@ -1,13 +1,20 @@
 package com.neuedu.test2;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Test2 {
     public static List<MyBook2> books = new ArrayList<>(200);
+    public static File file = new File("e:/tushu");
     public static void main(String[] args) {
-        initData(books);
+        if (!file.exists()){
+            initData(books);
+            save();
+        }else {
+            load();
+        }
         menu();
     }
     public static void initData(List<MyBook2> books){
@@ -79,6 +86,7 @@ public class Test2 {
             }
             if (a == 1){
                 inputData(books);
+                save();
             }else if (a == 2){
                 print(books);
             }else if (a == 3){
@@ -89,8 +97,59 @@ public class Test2 {
                 System.out.println("请输入要删除的图书");
                 String name = s.next();
                 deleteName(books,name);
+                save();
             }else {
                 flag = 1;
+            }
+        }
+    }
+    public static void save(){
+        OutputStream os = null;
+        ObjectOutputStream oos = null;
+        try {
+            os = new FileOutputStream(file);
+            oos = new ObjectOutputStream(os);
+            oos.writeObject(books);
+            oos.flush();
+            os.flush();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                if (oos != null)
+                    oos.close();
+                if (os != null)
+                    os.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+
+    }
+    public static void load(){
+        InputStream is = null;
+        ObjectInputStream ois = null;
+        try {
+            is = new FileInputStream(file);
+            ois = new ObjectInputStream(is);
+            books = (List<MyBook2>) ois.readObject();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                if (ois != null)
+                    ois.close();
+                if (is != null)
+                    is.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
     }
