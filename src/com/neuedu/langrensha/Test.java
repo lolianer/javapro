@@ -13,14 +13,14 @@ public class Test {
         int nuper = s.nextByte();
         List<Person> people = initPeople(nuper);
         int nupai = nuper+3;
-        List<Pai> pais = sort(nupai);
+        List<Pai> pais = initpai(nupai);
         List<Pai> dipais =xipai(pais);
         System.out.println("玩家手牌为：");
         faPai(people,pais);
         System.out.println("盗贼底牌为：");
         print(dipais);
     }
-    public static List sort(int nupai){
+    public static List initpai(int nupai){
         List<Pai> pais = new ArrayList<>();
 
         for (int j = 0; j<4;j++){
@@ -73,7 +73,6 @@ public class Test {
         Collections.shuffle(pais);
         Collections.shuffle(pais);
         Collections.shuffle(pais);
-        int nudipai = 0;
         int nulangren = 0;
         for (int i = 0; i < pais.size(); i++){
             if (!pais.get(i).toString().equals("盗贼")){
