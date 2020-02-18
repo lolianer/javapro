@@ -1,6 +1,8 @@
 package com.neuedu.test;
 
+import com.neuedu.bean.Student;
 import com.neuedu.test2.MyBook;
+import com.neuedu.web.StudentWeb;
 
 public class Test {
     public static void main(String[] args) {
@@ -23,7 +25,8 @@ public class Test {
         mainBoard.setCpu(i3);
         mainBoard.method();*/
 
-
+        StudentWeb s = new StudentWeb();
+        s.menu();
 
             
 
