@@ -1,8 +1,11 @@
 package com.neuedu.test;
 
-import com.neuedu.bean.Student;
+import com.neuedu.pojo.Student;
 import com.neuedu.test2.MyBook;
+import com.neuedu.util.JdbcUtil2;
 import com.neuedu.web.StudentWeb;
+
+import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
@@ -25,8 +28,16 @@ public class Test {
         mainBoard.setCpu(i3);
         mainBoard.method();*/
 
-        StudentWeb s = new StudentWeb();
-        s.menu();
+        /*StudentWeb s = new StudentWeb();
+        s.menu();*/
+        String sql = "select * from Student";
+        String[] a = {"sno","name","sex","age"};
+        Object[][] students = JdbcUtil2.query2(sql,a);
+        for (int i = 0; i < students.length; i++){
+            for (int j = 0; j < a.length; j++){
+                System.out.println(students[i][j]);
+            }
+        }
 
             
 
