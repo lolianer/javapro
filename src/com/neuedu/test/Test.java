@@ -2,10 +2,18 @@ package com.neuedu.test;
 
 import com.neuedu.pojo.Student;
 import com.neuedu.test2.MyBook;
+import com.neuedu.util.JdbcUtil;
 import com.neuedu.util.JdbcUtil2;
 import com.neuedu.web.StudentWeb;
 
+import javax.lang.model.type.ExecutableType;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import static com.neuedu.util.JdbcUtil.getConnection;
 
 public class Test {
     public static void main(String[] args) {
@@ -30,18 +38,98 @@ public class Test {
 
         /*StudentWeb s = new StudentWeb();
         s.menu();*/
-        String sql = "select * from Student";
+        /*String sql = "select * from Student";
         String[] a = {"sno","name","sex","age"};
         Object[][] students = JdbcUtil2.query2(sql,a);
         for (int i = 0; i < students.length; i++){
             for (int j = 0; j < a.length; j++){
                 System.out.println(students[i][j]);
             }
-        }
+        }*/
+        /*ExecutorService service = Executors.newCachedThreadPool();
+        service.execute(()->{
+            shiwu1();
+        });
+        service.execute(()->{
+            shiwu2();
+        });*/
+        String a = "sdas";
+        a = "sdsd";
+        System.out.println(a);
+
 
             
 
 
 
+    }
+    public static void shiwu1() {
+        Student student = new Student();
+        int result = 0;
+        Connection con = getConnection();
+        PreparedStatement pstmt = null;
+        try {
+            con.setAutoCommit(false);
+            String sql = "insert into Student(sno,name,sex,age) values (15,'安防','男',20)";
+            pstmt = con.prepareStatement(sql);
+            //执行语句
+            result = pstmt.executeUpdate();
+            System.out.println(result);
+            Thread.sleep(3000);
+            int a = 100/0;
+            con.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (pstmt != null)
+                    pstmt.close();
+                if (con != null)
+                    con.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    public static  void shiwu2(){
+        Connection con = getConnection();
+        List<Student> students = new ArrayList<>();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        try {
+            con.setAutoCommit(false);
+            con.setTransactionIsolation(1);
+            Thread.sleep(1000);
+            String sql = "select * from Student";
+            pstmt = con.prepareStatement(sql);
+
+            rs = pstmt.executeQuery();
+            while(rs.next()){
+                Student student = new Student();
+                student.setSno(rs.getInt("sno"));
+                student.setName(rs.getString("name"));
+                student.setSex(rs.getString("sex"));
+                student.setAge(rs.getInt("age"));
+                students.add(student);
+
+                con.commit();
+            }
+        }  catch (SQLException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (rs != null)
+                    rs.close();
+                if (pstmt != null)
+                    pstmt.close();
+                if (con != null)
+                    con.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println(students);
     }
 }
