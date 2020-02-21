@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class JdbcUtil2 {
-    private static final String URL = "jdbc:mysql://192.168.10.155:3306/db1?useUnicode=true&characterEncoding=utf8";
+    private static final String URL = "jdbc:mysql://110.181.92.207:3306/db1?useUnicode=true&characterEncoding=utf8";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "123456";
     static {

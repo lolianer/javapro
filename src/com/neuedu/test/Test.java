@@ -1,17 +1,12 @@
 package com.neuedu.test;
 
 import com.neuedu.pojo.Student;
-import com.neuedu.test2.MyBook;
-import com.neuedu.util.JdbcUtil;
 import com.neuedu.util.JdbcUtil2;
 import com.neuedu.web.StudentWeb;
 
-import javax.lang.model.type.ExecutableType;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 import static com.neuedu.util.JdbcUtil.getConnection;
 
@@ -36,16 +31,16 @@ public class Test {
         mainBoard.setCpu(i3);
         mainBoard.method();*/
 
-        /*StudentWeb s = new StudentWeb();
-        s.menu();*/
-        /*String sql = "select * from Student";
+        StudentWeb s = new StudentWeb();
+        s.menu();
+        String sql = "select * from Student";
         String[] a = {"sno","name","sex","age"};
         Object[][] students = JdbcUtil2.query2(sql,a);
         for (int i = 0; i < students.length; i++){
             for (int j = 0; j < a.length; j++){
                 System.out.println(students[i][j]);
             }
-        }*/
+        }
         /*ExecutorService service = Executors.newCachedThreadPool();
         service.execute(()->{
             shiwu1();
@@ -53,9 +48,6 @@ public class Test {
         service.execute(()->{
             shiwu2();
         });*/
-        String a = "sdas";
-        a = "sdsd";
-        System.out.println(a);
 
 
             

@@ -1,4 +1,4 @@
-package com.neuedu.test2;
+package com.neuedu.book;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package com.neuedu.test2;
+package com.neuedu.book;
 
 public class Test {
     public static void main(String[] args) {
