@@ -8,7 +8,9 @@ import java.util.Queue;
 
 public class MyTest5 {
     public static void main(String[] args) {
-
+        int[] a = {2};
+        int[] b = {};
+        System.out.println("中位数为"+findMedianSortedArrays(a,b));
     }
     public static int reverse(int x){
 
@@ -42,7 +44,7 @@ public class MyTest5 {
      */
 
     //方法1
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    /*public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode p = l1;
         ListNode q = l2;
         long a = 0;
@@ -72,15 +74,16 @@ public class MyTest5 {
             c=c/10;
         }while (c!=0);
         return q.next;
-    }
+    }*/
     //方法2
-    public ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode l3 = new ListNode(0);
         ListNode l4 = new ListNode(0);
         l3 = l4;
         byte a;
         byte b;
         byte flag = 0;
+        byte flag1 = 0;
         while (true){
             if (l1!=null){
                 a = (byte) (l1.val);
@@ -94,18 +97,51 @@ public class MyTest5 {
             }else {
                 b=0;
             }
-            if (l1 == null&&l2==null)
-                break;
-            a = (byte) (a+b);
+            a = (byte) (a+b+flag1);
             if (a/10!=0){
                 a=(byte) (a%10);
                 flag = 1;
             }
+            System.out.print("a:"+a);
             ListNode l5 = new ListNode(a);
             l4.next = l5;
-            l4.next.val += flag;
+            flag1=flag;
             l4 = l4.next;
+            if (l1 == null&&l2==null)
+                break;
+            flag = 0;
         }
-        return l3;
+        if (flag1==1){
+            ListNode l5 = new ListNode(flag1);
+            l4.next = l5;
+        }
+        return l3.next;
+    }
+    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int[] nums3 = new int[nums1.length+nums2.length];
+        int i=0,j=0,k=0,n=0;
+        double m=0;
+        while (i < nums1.length && j < nums2.length){
+            nums3[k++] = nums1[i]>nums2[j]?nums2[j++]:nums1[i++];
+        }
+        if (i == nums1.length){
+            while (j < nums2.length)
+                nums3[k++] = nums2[j++];
+        }
+
+        if (j == nums2.length){
+            while (j < nums2.length)
+                nums3[k++] = nums1[i++];
+        }
+        if (nums3.length%2==0){
+            m = (double)(nums3[nums3.length/2]+nums3[nums3.length/2-1])/2.0;
+        }else {
+            m = nums3[nums3.length/2];
+        }
+        while (n < nums3.length){
+            System.out.println(nums3[n++]);
+        }
+        return m;
+
     }
 }

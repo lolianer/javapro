@@ -1,11 +1,11 @@
 package com.neuedu.util;
-//自己无参考写/背
+
 import java.lang.reflect.Field;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JdbcUtil2 {
+public class JdbcUtil3 {
     private static final String URL = "jdbc:mysql://192.168.10.155:3306/db1?useUnicode=true&characterEncoding=utf8";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "123456";
@@ -17,15 +17,15 @@ public class JdbcUtil2 {
         }
     }
     public static Connection getConnection(){
-        Connection connection = null;
+        Connection con = null;
         try {
-            connection = DriverManager.getConnection(URL,USERNAME,PASSWORD);
+            con = DriverManager.getConnection(URL,USERNAME,PASSWORD);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return connection;
+        return con;
     }
-    public static <T> List<T> query(String sql,Class<T> a,Object... b){
+    public static <T> List<T> query(String sql,Class<T> a, Object... b){
         List<T> list = new ArrayList<>();
         Connection con = getConnection();
         PreparedStatement pstmt = null;
@@ -37,15 +37,13 @@ public class JdbcUtil2 {
                     pstmt.setObject(i+1,b[i]);
                 }
             }
+            T t = a.newInstance();
+            Field[] field = a.getDeclaredFields();
             rs = pstmt.executeQuery();
             while (rs.next()){
-                T t = a.newInstance();
-
-                Field[] field = a.getDeclaredFields();
                 for (Field f : field){
-                    Object o = rs.getObject(f.getName());
                     f.setAccessible(true);
-                    f.set(t,o);
+                    f.set(t,rs.getObject(f.getName()));
                 }
                 list.add(t);
             }
@@ -60,50 +58,10 @@ public class JdbcUtil2 {
         }
         return list;
     }
-    public static int update(String sql,List a){
+    public static int update(String sql,Object... b){
         Connection con = getConnection();
         PreparedStatement pstmt = null;
         int result = 0;
-        try {
-            pstmt = con.prepareStatement(sql);
-            if (a != null){
-                for (int i = 0; i < a.size(); i++){
-                    pstmt.setObject(i+1,a.get(i));
-                }
-            }
-            result = pstmt.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }finally {
-            close(con,pstmt);
-        }
-        return result;
-    }
-    public static void close(Connection c,PreparedStatement p){
-        try {
-            if (p != null)
-                p.close();
-            if (c != null)
-                c.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-    public static void close(Connection c, PreparedStatement p, ResultSet rs){
-        try {
-            if (rs != null)
-                rs.close();
-            close(c,p);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-    //用二维数组做一遍查询
-    public static Object[][] query2(String sql,String[] a,Object... b){
-        Object[][] objects = new Object[10][4];
-        Connection con = getConnection();
-        PreparedStatement pstmt = null;
-        ResultSet rs = null;
         try {
             pstmt = con.prepareStatement(sql);
             if (b != null){
@@ -111,26 +69,30 @@ public class JdbcUtil2 {
                     pstmt.setObject(i+1,b[i]);
                 }
             }
-            rs = pstmt.executeQuery();
-            int i = 0;
-            while (rs.next()){
-                for (int j = 0; j < a.length;j++){
-                    Object o = rs.getObject(a[j]);
-                    try{
-                        objects[i][j] = o;
-                    }catch (Exception e){
-                        System.out.println(i+"   "+j);
-                    }
-
-                }
-                i++;
-            }
+            result = pstmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            close(con,pstmt,rs);
         }
-        return objects;
+        return result;
+    }
+    public static void close(Connection con,PreparedStatement pstmt){
+        try {
+            if (pstmt != null)
+                pstmt.close();
+            if (con != null)
+                con.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void close(Connection con,PreparedStatement pstmt,ResultSet rs){
+        try {
+            if (rs != null)
+                rs.close();
+            close(con,pstmt);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 }
